@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="analisis.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+     <nav>
+     <a href="tipo_cultivo.html" class="header__enlace">Atras</a>
+    </nav>
+    </header>
+<main class="formulario" id="formulario">
+    <h1 class="formulario__titulo"> !Elige la opcion de los facatores actuales de su finca¡</h1>
+       <section class="formulario__filtro">
+        <div class="bloque">
+        <h2 class="formulario__titulo">¿Tipo de Clima?</h2>
+        <button class="boton__filtro" name="filtro">Calido</button>
+        <button class="boton__filtro" name="filtro">Templado</button>
+        <button class="boton__filtro" name="filtro">Frio</button>
+        <button class="boton__filtro invisible">-</button>
+
+    </div>
+    <div class="bloque">
+        <h2 class="formulario__titulo">¿Como trabajaras el suelo?</h2>
+        <button class="boton__filtro" name="filtro">Palanca</button>
+        <button class="boton__filtro" name="filtro">Pala</button>
+        <button class="boton__filtro" name="filtro">Tractor</button>
+        <button class="boton__filtro invisible">-</button>
+
+    </div>
+    <div class="bloque">
+        <h2 class="formulario__titulo">¿Periodo climatico actual?</h2>
+        <button class="boton__filtro" name="filtro">Lluvias</button>
+        <button class="boton__filtro" name="filtro">Verano</button>
+        <button class="boton__filtro" name="filtro">Ambas</button>
+        <button class="boton__filtro" name="filtro"> Riego</button>
+    </div>
+        
+        
+       </section>
+    <div id="formulario" class="formulario__contenedor">
+    
+    <div class="columna">
+    <p><strong>Elementos mayores</strong></p>
+    <input type="numero" id="parametro1" name ="elemento" placeholder="MO" class="formulario__input">
+    <input type="numero" id="parametro2" name ="elemento" placeholder="Potasio" class="formulario__input">
+    <input type="numero" id="parametro3" name ="elemento" placeholder="Fosforo" class="formulario__input">
+    </div>
+    <div class="columna"> 
+    <p><strong>Mayores secundarios</strong></p>   
+    <input type="numero" id="parametro4" name ="elemento" placeholder="Carbono" class="formulario__input">
+    <input type="numero" id="parametro5" name ="elemento" placeholder="Calcio" class="formulario__input">
+    
+    </div>
+
+    <div class="columna">
+    <p><strong>Elementos menores</strong></p>
+    <input type="numero" id="parametro6" name ="elemento" placeholder="Magnecio" class="formulario__input">
+    <input type="numero" id="parametro7" name ="elemento" placeholder="Boro" class="formulario__input">
+    <input type="numero" id="parametro8" name ="elemento" placeholder="azufre" class="formulario__input">
+    <input type="numero" id="parametro9" name ="elemento" placeholder="cobre" class="formulario__input">
+    <input type="numero" id="parametro10" name ="elemento" placeholder="Manganeso" class="formulario__input">
+    <input type="numero" id="parametro11" name ="elemento" placeholder="Hierro" class="formulario__input">
+    
+    </div>
+
+    <div class="columna">
+        <p><strong>Estabilidad quimica</strong></p>
+        <input type="numero" id="parametro12" name ="elemento" placeholder="Ph" class="formulario__input">
+        <input type="numero" id="parametro13" name ="elemento" placeholder="Salinidad" class="formulario__input">
+        
+    </div>
+    <div class="boton">
+    <input type="submit" id="calculo" name="calcular"  value="Calcular" class="boton__calcular">
+    </div>
+
+</div>
+
+    
+    
+   
+</main>
+
+
+
+<footer class="footer">
+    <img src="visualx.png" class="visualx">
+    <h2 class="fabricante">© 2025 Visual X - Todos los derechos reservados</h2>
+
+</footer>
+<script src="analisis.js"></script>  
+</body>
+</html>
